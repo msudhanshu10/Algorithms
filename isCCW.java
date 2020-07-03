@@ -1,3 +1,5 @@
+//This program calculates whether three points are Counter clock wise or not.
+//It uses cross multiplication of two continuous vectors.
 import java.util.*;
 class isCCW
 {

@@ -1,5 +1,8 @@
-//import java.util.*;
-//import java.io.*;
+import java.util.*;
+import java.io.*;
+//Dijkstra's Algorithm is used in calculating arithmetic expression
+//It uses Two stack method.
+//First Stack is Number stack while second stack is operator stack.
 public class DijkstaAlgo
 {
     public static void main(String args[])

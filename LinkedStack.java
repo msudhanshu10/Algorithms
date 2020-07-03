@@ -1,3 +1,4 @@
+//Linked List implementation of Stack.
 import java.util.*;
 class LinkedStack
 {

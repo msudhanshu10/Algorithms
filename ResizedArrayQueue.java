@@ -1,3 +1,4 @@
+//Resized Array implementation of Queue.
 class ResizedArrayQueue
 {
     private String s[];

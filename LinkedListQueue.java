@@ -1,3 +1,4 @@
+//Linked list implementation of Queue.
 public class LinkedListQueue
 {
     private Node head=null,top=null;
