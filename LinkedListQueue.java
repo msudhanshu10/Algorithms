@@ -1,19 +1,17 @@
 //Linked list implementation of Queue.
-public class LinkedListQueue
+public class LinkedListQueue<Item>
 {
     private Node head=null,top=null;
 
     private class Node
     {
-        String s;
+        Item s;
         Node next;
     }
 
-    /*LinkedListQueue(){
-        next=null;
-    }*/
 
-    public void enqueue(String item)
+
+    public void enqueue(Item item)
     {
         if(head==null)
         {
@@ -33,12 +31,12 @@ public class LinkedListQueue
         }
     }
 
-    public String dequeue()
+    public Item dequeue()
     {
         if(head==null)
-             return "Error! Queue is empty";
+             return null;
 
-        String item=head.s;
+        Item item=head.s;
         head=head.next;
         return item;
     }
@@ -63,24 +61,5 @@ public class LinkedListQueue
         System.out.println("null");
         return count;
     }
-
-    public static void main(String args[])
-    {
-        LinkedListQueue obj=new LinkedListQueue();
-        obj.enqueue("10");
-        obj.enqueue("20");
-        obj.enqueue("30");
-        obj.enqueue("40");
-        obj.enqueue("50");
-        obj.enqueue("60");
-        System.out.println(obj.size());
-        System.out.println(obj.dequeue());
-        System.out.println(obj.dequeue());
-        System.out.println(obj.dequeue());
-        System.out.println(obj.size());
-
-    }
-
-
 
 }
